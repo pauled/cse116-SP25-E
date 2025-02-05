@@ -17,6 +17,8 @@ public class TestCode {
         assertEquals("Expected 5 on (10,5) but got: "+result,15,result);
         result=CodeToTest.add(3, 3);
         assertEquals("Expected 6 on (3,3) but got: "+result,6,result);
+
+        assertEquals("words",4.5,4.500001,.0001);
     }
     @Test
     public void testAddZero() {
