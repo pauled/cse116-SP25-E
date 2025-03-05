@@ -19,6 +19,7 @@ public class Weapon extends GameItem{
     }
 
     public static void main(String[] args) {
+        /*
         Player p1=new Player(9);
         Weapon w=new Weapon(1,2,20);
         w.use(p1);
@@ -26,5 +27,14 @@ public class Weapon extends GameItem{
         System.out.println(w);
         HealthPotion h=new HealthPotion(3,4,5);
         System.out.println(h);
+        w.move(10,10);
+        System.out.println(w);
+        p1.move(13,13);
+        System.out.println(p1);
+
+         */
+        Weapon w=new Weapon(1,2,20);
+        w.move(10,10);
+        String temp=w.toString();
     }
 }

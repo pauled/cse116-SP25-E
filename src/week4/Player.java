@@ -1,11 +1,14 @@
 package week4;
 
-public class Player {
+import week7.GameItem;
+
+public class Player extends GameItem {
     private int HP;
     private int maxHP;
     private int damageDealt;
 
     public Player(int maxHP){
+        super(0,0);
         this.maxHP=maxHP;
         this.HP=maxHP;
         this.damageDealt=4;
@@ -28,7 +31,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Health: " + HP + "/" +maxHP +
+        return super.toString()+" Health: " + HP + "/" +maxHP +
                 ", damageDealt=" + damageDealt;
     }
 
