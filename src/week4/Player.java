@@ -19,9 +19,17 @@ public class Player {
     public int getMaxHP(){
         return this.maxHP;
     }
-
+    public void setDamageDealt(int damage){
+        this.damageDealt=damage;
+    }
     public int getHP() {
         return this.HP;
+    }
+
+    @Override
+    public String toString() {
+        return "Health: " + HP + "/" +maxHP +
+                ", damageDealt=" + damageDealt;
     }
 
     public static void main(String[] args) {
