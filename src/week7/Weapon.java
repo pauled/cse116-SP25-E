@@ -12,6 +12,9 @@ public class Weapon extends GameItem{
     public void use(Player player){
         player.setDamageDealt(this.damage);
     }
+    public int getDamage(){
+        return this.damage;
+    }
     public String toString(){
         String out="damage: "+this.damage+" ";
         out+=super.toString();
@@ -36,5 +39,6 @@ public class Weapon extends GameItem{
         Weapon w=new Weapon(1,2,20);
         w.move(10,10);
         String temp=w.toString();
+        System.out.println(temp);
     }
 }

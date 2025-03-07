@@ -25,7 +25,7 @@ public class GameItem {
 
     public void use(Player player){}
     public String toString(){
-        String out="loc: ("+this.getxLoc()+","+this.getyLoc()+")";
+        String out="loc: ("+this.getxLoc()+","+this.getyLoc()+") "+super.toString();
         return out;
     }
 }
