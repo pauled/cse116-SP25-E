@@ -1,8 +1,9 @@
 package week7;
 
 import week10.Player;
+import week10.Usable;
 
-public class Weapon extends GameItem{
+public class Weapon extends GameItem implements Usable {
     private int damage;
 
     public Weapon(double x,double y,int damage){

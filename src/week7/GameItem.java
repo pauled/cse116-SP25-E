@@ -2,7 +2,7 @@ package week7;
 
 import week10.Player;
 
-public class GameItem {
+public abstract class GameItem {
     private double xLoc;
     private double yLoc;
 
@@ -23,7 +23,8 @@ public class GameItem {
         return yLoc;
     }
 
-    public void use(Player player){}
+    //public abstract void use(Player player);
+
     public String toString(){
         String out="loc: ("+this.getxLoc()+","+this.getyLoc()+") "+super.toString();
         return out;

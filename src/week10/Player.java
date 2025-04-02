@@ -10,7 +10,7 @@ public class Player extends GameItem {
     private int HP;
     private int maxHP;
     private int damageDealt;
-    private ArrayList<GameItem> inventory;
+    private ArrayList<Usable> inventory;
 
     public Player(int maxHP){
         super(0,0);
@@ -19,7 +19,7 @@ public class Player extends GameItem {
         this.damageDealt=4;
         this.inventory=new ArrayList<>();
     }
-    public void pickupItem(GameItem gi){
+    public void pickupItem(Usable gi){
         this.inventory.add(gi);
     }
     public void takeDamage(int damage){
@@ -55,9 +55,9 @@ public class Player extends GameItem {
         GameItem gi1=new HealthPotion(3,4,20);
         hp1.drink();
         System.out.println(p1);
-        gi1.use(p1);
+        //gi1.use(p1);
         System.out.println(p1);
-        p2.use(p1);
+        //p2.use(p1);
         System.out.println(p1);
         //gi1.drink();
         HealthPotion hp2=(HealthPotion) gi1;
@@ -65,6 +65,6 @@ public class Player extends GameItem {
         Weapon weapon=new Weapon(5,6,10);
         p1.pickupItem(hp1);
         p1.pickupItem(weapon);
-        p1.pickupItem(gi1);
+        //p1.pickupItem(gi1);
     }
 }
