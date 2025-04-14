@@ -51,7 +51,7 @@ public class Graph<N> {
         }
         return destCount;
     }
-    public ArrayList<N> mostIncomingHelper(HashMap<N,Integer> destCount){
+    /*public ArrayList<N> mostIncomingHelper(HashMap<N,Integer> destCount){
         HashMap<Integer,ArrayList<N>> counts=new HashMap<>();
         for (N node: destCount.keySet()){
             int count=destCount.get(node);
@@ -63,12 +63,12 @@ public class Graph<N> {
                 counts.put(count,new ArrayList<>());
             }
         }
-
+        return counts;
     }
     public ArrayList<N> mostIncoming(){
         HashMap<N,Integer> destinationCount=countDestinations();
         return mostIncomingHelper(destinationCount);
-    }
+    }*/
     public static void main(String[] args) {
         Graph<String> graph=new Graph<>();
         //add edges
